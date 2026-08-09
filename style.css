@@ -2930,28 +2930,38 @@ footer {
 /* Uniquement pour les écrans de téléphone */
 @media (max-width: 768px) {
 
+    /* On applique la règle à la fois sur collectif-nav ET au-feu-nav */
     #collectif-nav,
-    .collectif-nav {
+    .collectif-nav,
+    #aufeu-nav,
+    .au-feu-nav {
         position: static !important;
-        /* Le remet dans le défilement normal de la page */
+        /* Supprime le côté fixe/flottant */
         box-shadow: none !important;
         /* Supprime l'ombre de la bulle */
         border: none !important;
-        /* Supprime les bordures */
+        /* Supprime la bordure */
         background: transparent !important;
-        /* Enlève le fond blanc/gris */
+        /* Supprime le fond */
         width: 100% !important;
         /* Remet en pleine largeur */
         transform: none !important;
-        /* Annule les décalages/déformations */
+        /* Annule toute déformation */
         margin: 20px 0 !important;
     }
 
-    /* Pour que les 3 liens restent bien alignés proprement */
-    .collectif-nav .container {
+    /* Pour aligner les liens proprement sur mobile */
+    .collectif-nav .container,
+    .au-feu-nav .container {
         display: flex !important;
-        justify-content: space-around !important;
+        flex-wrap: wrap !important;
+        /* Permet aux liens de passer à la ligne s'ils sont trop longs */
+        justify-content: center !important;
+        /* Centre les liens */
+        gap: 10px 15px !important;
+        /* Ajoute un bel espace entre les mots */
         width: 100% !important;
         padding: 0 !important;
     }
+
 }
