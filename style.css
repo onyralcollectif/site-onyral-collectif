@@ -2926,3 +2926,32 @@ footer {
     justify-content: center;
     gap: 6rem;
 }
+
+/* Uniquement pour les écrans de téléphone */
+@media (max-width: 768px) {
+
+    #collectif-nav,
+    .collectif-nav {
+        position: static !important;
+        /* Le remet dans le défilement normal de la page */
+        box-shadow: none !important;
+        /* Supprime l'ombre de la bulle */
+        border: none !important;
+        /* Supprime les bordures */
+        background: transparent !important;
+        /* Enlève le fond blanc/gris */
+        width: 100% !important;
+        /* Remet en pleine largeur */
+        transform: none !important;
+        /* Annule les décalages/déformations */
+        margin: 20px 0 !important;
+    }
+
+    /* Pour que les 3 liens restent bien alignés proprement */
+    .collectif-nav .container {
+        display: flex !important;
+        justify-content: space-around !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
