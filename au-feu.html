@@ -289,6 +289,12 @@
             const navLinks = aufeuNav.querySelectorAll('.au-feu-nav-link');
 
             function updateNavPosition() {
+                // Ne jamais activer le side-nav sur mobile/tablette
+                if (window.innerWidth <= 768) {
+                    aufeuNav.classList.remove('side-nav');
+                    return;
+                }
+
                 const heroHeight = aufeuHero.offsetHeight;
 
                 // Move to side when past hero, back to horizontal when at top
@@ -301,6 +307,9 @@
 
             // Update position on scroll
             window.addEventListener('scroll', updateNavPosition);
+
+            // Also update on resize (switch desktop/mobile)
+            window.addEventListener('resize', updateNavPosition);
 
             // Also move to side on click (for immediate navigation)
             navLinks.forEach(link => {

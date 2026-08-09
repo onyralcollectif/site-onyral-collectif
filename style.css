@@ -2773,6 +2773,35 @@ footer {
         min-width: max-content;
     }
 
+    /* Disable side-nav transformation on mobile */
+    .collectif-nav.side-nav {
+        position: sticky;
+        top: var(--nav-height);
+        right: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-bottom: 2px solid var(--accent-purple);
+        background: var(--bg-light);
+        padding: 1rem 5%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .collectif-nav.side-nav .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .collectif-nav.side-nav .collectif-nav-link {
+        text-align: left;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+    }
+
     /* Founders Grid Mobile */
     .founders-row-top,
     .founders-row-bottom {

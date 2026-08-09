@@ -183,6 +183,12 @@
             const navLinks = collectifNav.querySelectorAll('.collectif-nav-link');
 
             function updateNavPosition() {
+                // Ne jamais activer le side-nav sur mobile/tablette
+                if (window.innerWidth <= 768) {
+                    collectifNav.classList.remove('side-nav');
+                    return;
+                }
+
                 const heroHeight = collectifHero.offsetHeight;
 
                 // Move to side when past hero, back to horizontal when at top
@@ -195,6 +201,9 @@
 
             // Update position on scroll
             window.addEventListener('scroll', updateNavPosition);
+
+            // Also update on resize (switch desktop/mobile)
+            window.addEventListener('resize', updateNavPosition);
 
             // Also update on click (for immediate navigation)
             navLinks.forEach(link => {
