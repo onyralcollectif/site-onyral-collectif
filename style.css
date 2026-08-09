@@ -2965,3 +2965,38 @@ footer {
     }
 
 }
+
+.projet-card-featured {
+    background: linear-gradient(135deg, rgba(0, 0, 51, 0.6) 0%, rgba(26, 26, 94, 0.5) 100%), url('au-feu-card.png') no-repeat center center !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+
+    /* On passe le sous-menu en affichage normal (pas de boîte absolue) */
+    .dropdown {
+        position: static !important;
+        /* Remet le lien dans le flux normal */
+        background: transparent !important;
+        /* Enlève la boîte noire/sombre autour */
+        border: none !important;
+        /* Enlève la bordure */
+        box-shadow: none !important;
+        /* Enlève l'ombre */
+        padding: 10px 0 !important;
+        /* Un peu d'espace */
+        transform: none !important;
+        /* Annule les centrages absolus */
+    }
+
+    /* Style du lien "Au Feu !" dans le menu mobile */
+    .dropdown a {
+        font-size: 1.1rem !important;
+        /* Légèrement plus petit que les gros titres */
+        opacity: 0.85;
+        /* Légèrement plus discret */
+        display: block !important;
+    }
+
+}
