@@ -58,7 +58,10 @@
                         l’aventure.</p>
                 </div>
 
-                <form class="contact-form-direct" action="#" method="post">
+                <form class="contact-form-direct" name="contact" method="POST" data-netlify="true">
+                    <!-- Ligne cachée obligatoire pour Netlify -->
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <div class="form-row-direct">
                         <div class="form-field-direct">
                             <label for="name">Nom</label>
