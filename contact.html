@@ -58,10 +58,14 @@
                         l’aventure.</p>
                 </div>
 
-                <form class="contact-form-direct" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="fc274b36-6ce5-4a2a-b235-65f29ffd5b78">
-                
-
+                <!-- Formulaire configuré avec FormSubmit (Gratuit & Illimité) -->
+                <form class="contact-form-direct" action="https://formsubmit.co/onyralcollectif@gmail.com" method="POST">
+                    <!-- Redirection vers ton site après envoi -->
+                    <input type="hidden" name="_next" value="https://onyralcollectif.be">
+                    <!-- Enlève la page de vérification captcha pour un envoi direct -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Filtre anti-spam invisible -->
+                    <input type="text" name="_honey" style="display:none">
 
                     <div class="form-row-direct">
                         <div class="form-field-direct">
@@ -76,7 +80,7 @@
 
                     <div class="form-field-direct">
                         <label for="subject">Objet</label>
-                        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message">
+                        <input type="text" id="subject" name="_subject" placeholder="Sujet de votre message">
                     </div>
 
                     <div class="form-field-direct">
