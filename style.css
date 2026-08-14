@@ -2855,12 +2855,17 @@ footer {
    AU FEU TEAM GRID (COMPACT CIRCLE GRID)
    ======================================== */
 .au-feu-team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem 1.5rem;
-    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2.5rem 2rem;
+    /* Espacement un peu plus généreux */
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    max-width: 680px;
+    /* On agrandit la largeur globale de la grille */
 }
 
 .au-feu-team-card {
@@ -2869,7 +2874,8 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 130px;
+    max-width: 170px;
+    /* Cartes plus larges pour accueillir des photos plus grandes */
     transition: transform 0.3s ease;
 }
 
@@ -2878,12 +2884,13 @@ footer {
 }
 
 .au-feu-team-photo-wrapper {
-    width: 85px;
-    height: 85px;
+    width: 115px;
+    /* Photos agrandies (étaient à 85px) */
+    height: 115px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 0.6rem;
-    border: 2px solid rgba(255, 255, 255, 0.85);
+    margin-bottom: 0.8rem;
+    border: 3px solid rgba(255, 255, 255, 0.85);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.15);
     display: flex;
@@ -2906,16 +2913,18 @@ footer {
 }
 
 .au-feu-team-name {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    /* Texte du nom légèrement plus grand */
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
 }
 
 .au-feu-team-role {
-    font-size: 0.78rem;
+    font-size: 0.88rem;
+    /* Texte du rôle légèrement plus grand */
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.2;
     font-weight: 300;
