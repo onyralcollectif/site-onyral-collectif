@@ -45,51 +45,42 @@
     </header>
 
     <main>
+        <!-- Section Hero -->
         <section class="projets-hero">
             <div class="hero-content">
                 <h1>En création</h1>
             </div>
         </section>
 
+        <!-- Section Projets -->
         <section class="projets-content">
             <div class="container">
-                <h2 class="section-title">Projet</h2>
+                <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">Projet</h2>
 
-                <div class="projets-grid">
-                    <!-- Au Feu Card - Main Project -->
-                    <a href="au-feu.html" class="projet-card projet-card-featured">
+                <!-- Grille des vignettes -->
+                <div class="projets-grid"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; max-width: 1000px; margin: 0 auto; align-items: stretch;">
 
-                        <div class="projet-content" style="justify-content: flex-end; padding-bottom: 2rem;">
-                            <div class="projet-tag" style="margin-top: 1rem;"> Création 2027-2028 </div>
+                    <!-- Carte 1 : Au Feu (Badge recentré au milieu) -->
+                    <a href="au-feu.html" class="projet-card projet-card-featured"
+                        style="flex: 1 1 380px; max-width: 480px; min-height: 280px; text-decoration: none; border-radius: 20px; overflow: hidden; position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="projet-content"
+                            style="padding: 2rem; position: relative; z-index: 2; text-align: center;">
+                            <div class="projet-tag">Création 2027-2028</div>
                         </div>
-                        <div class="projet-overlay"></div>
+                        <div class="projet-overlay" style="position: absolute; inset: 0; z-index: 1;"></div>
                     </a>
 
-                    <!-- De nouvelles créations à venir... -->
-                    <div class="projet-card projet-card-coming">
+                    <!-- Carte 2 : Prochainement -->
+                    <div class="projet-card projet-card-coming"
+                        style="flex: 1 1 380px; max-width: 480px; min-height: 280px; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
                         <div class="projet-content">
                             <h3 class="projet-title-coming">Prochainement</h3>
-                            <p class="projet-description-coming">De nouvelles pistes de recherche et projets en
-                                maturation...</p>
+                            <p class="projet-description-coming">Onyral est encore au début de son histoire. D'autres
+                                envies viendront, d'autres recherches, d'autres rencontres.</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="separator"></div>
-
-                <div class="projets-info">
-                    <h2 class="section-title">Notre démarche</h2>
-                    <p>Pour l'Onyral Collectif, le théâtre est avant tout un espace vivant de rencontre et de
-                        transformation. Nous cherchons à porter des récits qui résonnent avec notre époque, au
-                        croisement de l’imaginaire, de la littérature et des réalités sociales.
-
-                        Notre travail naît d’une dynamique collective, où l’écriture, l’improvisation et la pratique du
-                        plateau s’articulent pour nourrir notre recherche artistique. Celle-ci s’accompagne
-                        naturellement d’actions ancrées dans le réel — ateliers, bords de scène, collaborations avec des
-                        écoles ou des associations — afin que le plateau devienne l'amorce d'un dialogue authentique.
-
-                        Au fil de notre parcours, cette page témoignera de l’évolution de nos travaux et de nos futures
-                        pistes de création.
                 </div>
             </div>
         </section>
